@@ -1,0 +1,27 @@
+.hero {
+  min-height: 100vh;
+  background-color: var(--primary-500);
+
+  display: grid;
+  place-items: center;
+}
+.hero-banner {
+  text-align: center;
+  color: var(--white);
+  padding: 0 1rem;
+}
+.hero-banner p {
+  max-width: 35rem;
+}
+.hero-banner h1 {
+  margin-bottom: 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), #2caebae0),
+      url(../images/main.jpeg) center/cover fixed no-repeat;
+  }
+  .hero-banner {
+    padding: 0 0.5rem;
+  }
+}

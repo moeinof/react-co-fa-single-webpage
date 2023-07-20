@@ -1,0 +1,42 @@
+#services {
+  background-color: var(--gray-100);
+}
+#services .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+.service {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  text-align: center;
+  flex: 0 0 370px;
+}
+.service span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  font-size: 2rem;
+
+  background-color: var(--primary-500);
+  color: var(--primary-100);
+  width: 4rem;
+  height: 4rem;
+}
+.service-info h4 {
+  margin-bottom: 1rem;
+}
+.service-info p {
+  max-width: 20rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 1170px) {
+  .service {
+    flex-direction: row;
+  }
+}
